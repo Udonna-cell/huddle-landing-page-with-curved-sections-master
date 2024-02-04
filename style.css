@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+body {
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: "Open Sans", sans-serif;
+  /* background-color: var(--Very-Pale-Blue); */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.7rem;
+}
+nav img,
+figure img,
+section.statistics > div div.logo > img {
+  width: 100%;
+}
+nav > div.log {
+  width: calc(100vw / 3.5);
+}
+button.btn-secondary {
+  border: 1px solid var(--Pink);
+  background-color: transparent;
+  color: var(--Pink);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+header {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+header > p {
+  margin: 1.5rem 0;
+}
+button.btn-primary {
+  background-color: var(--Pink);
+  color: var(--Very-Pale-Blue);
+  padding: 0.9rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  margin: 2rem 0;
+  box-shadow: 1px 2px 3px var(--Very-Dark-Cyan);
+}
+header > figure {
+  margin: 2.5rem 0;
+}
+
+section.statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  justify-content: center;
+  align-items: center;
+}
+section.statistics > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.statistics > div p.data {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+section.statistics > div p.label:last-child {
+  width: 100px;
+}
+section.statistics > div div.logo {
+  width: 47px;
+  align-self: flex-start;
+}
