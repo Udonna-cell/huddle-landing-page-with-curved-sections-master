@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
@@ -20,12 +21,14 @@ body {
   background-color: #fff;
   font-size: 1rem;
 }
+
 body nav,
 body header,
-main > section > * {
+main>section>* {
   padding-right: 2rem;
   padding-left: 2rem;
 }
+
 h1,
 h2,
 h3,
@@ -35,19 +38,23 @@ h6 {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+
 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-wrap: balance;
 }
-header > p {
+
+header>p {
   width: calc(265px * 1.2);
 }
+
 h1 {
   width: 265px;
   font-size: 1.6rem;
   margin: auto;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -55,14 +62,17 @@ nav {
   padding-top: 2.5rem;
   margin-bottom: 7rem;
 }
+
 nav img,
 figure img,
-section.statistics > div div.logo > img {
+section.statistics>div div.logo>img {
   width: 100%;
 }
-nav > div.log {
+
+nav>div.log {
   width: calc(100vw / 3.5);
 }
+
 button.btn-secondary {
   border: 1px solid var(--Pink);
   background-color: transparent;
@@ -75,9 +85,11 @@ header {
   text-align: center;
   margin: 4.5rem 0;
 }
-header > p {
+
+header>p {
   margin: 1.5rem auto;
 }
+
 button.btn-primary {
   background-color: var(--Pink);
   color: var(--Very-Pale-Blue);
@@ -87,7 +99,8 @@ button.btn-primary {
   margin: 2rem 0;
   box-shadow: 1px 2px 3px var(--Very-Dark-Cyan);
 }
-header > figure {
+
+header>figure {
   margin: 2.5rem 0;
 }
 
@@ -98,28 +111,34 @@ section.statistics {
   justify-content: center;
   align-items: center;
 }
-section.statistics > div {
+
+section.statistics>div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section.statistics > div p.data {
+
+section.statistics>div p.data {
   font-weight: 700;
   font-size: 3.5rem;
 }
-section.statistics > div p.label:last-child {
+
+section.statistics>div p.label:last-child {
   width: 100px;
 }
-section.statistics > div div.logo {
+
+section.statistics>div div.logo {
   width: 47px;
   align-self: flex-start;
 }
+
 main {
   display: flex;
   flex-direction: column;
   gap: 7.5rem;
 }
-main > section article {
+
+main>section article {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -127,8 +146,9 @@ main > section article {
   text-align: center;
   gap: 1.2rem;
 }
-section.grow-together > section.container,
-section.Your-Users > section.container {
+
+section.grow-together>section.container,
+section.Your-Users>section.container {
   background-color: var(--Very-Pale-Blue);
   /* min-height: 100vh; */
   display: flex;
@@ -140,7 +160,8 @@ section.Your-Users > section.container {
   /* text-align: center; */
   /* margin: 2rem 0; */
 }
-main > section div.curve {
+
+main>section div.curve {
   width: 100%;
   height: 102px;
   /* padding: 2rem; */
@@ -151,7 +172,8 @@ main > section div.curve {
   /* background-color: orange; */
   border-bottom: 2px solid var(--Very-Pale-Blue);
 }
-main > section div.curve:last-child {
+
+main>section div.curve:last-child {
   /* width: 100%; */
   /* height: 59px; */
   /* padding: 2rem; */
@@ -163,7 +185,8 @@ main > section div.curve:last-child {
   border-top: 2px solid var(--Very-Pale-Blue);
   /* background-color: orange; */
 }
-main > section div.curve2 {
+
+main>section div.curve2 {
   width: 100%;
   height: 102px;
   /* padding: 2rem; */
@@ -174,7 +197,8 @@ main > section div.curve2 {
   /* background-color: orange; */
   border-bottom: 2px solid var(--Very-Pale-Blue);
 }
-main > section div.curve2:last-child {
+
+main>section div.curve2:last-child {
   /* width: 100%; */
   /* height: 59px; */
   /* padding: 2rem; */
@@ -186,18 +210,27 @@ main > section div.curve2:last-child {
   border-top: 2px solid var(--Very-Pale-Blue);
   /* background-color: orange; */
 }
+
 section.Flowing-Conversations {
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
-body > main > section:last-child {
+
+body>main>section:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
-footer > div.curve {
+
+footer {
+  margin-top: 4rem;
+}
+
+footer>div.curve {
   width: 100%;
   height: 102px;
   background-image: url("./images/bg-footer-top-mobile.svg");
@@ -210,10 +243,13 @@ footer > div.curve {
   position: relative;
   bottom: -5px;
 }
-footer > main {
+
+footer>main {
   background-color: var(--Very-Dark-Cyan);
   color: var(--Very-Pale-Blue);
+  padding-top: 3rem;
 }
+
 section.newsletter {
   display: flex;
   flex-direction: column;
@@ -221,19 +257,72 @@ section.newsletter {
   gap: 1.2rem;
   padding: 2rem 0;
 }
-section.newsletter > p {
+
+section.newsletter>p {
   min-width: calc(200px * 2);
   max-width: calc(200px * 2);
   text-wrap: pretty;
   line-height: 1.2rem;
 }
-section.newsletter > h2 {
+
+section.newsletter>h2 {
   font-size: x-large;
   text-align: start;
 }
-form.newsletter > input[type="email"] {
-  padding: 0.5rem;
+
+form.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+form.newsletter>input[type="email"] {
+  padding: 0.8rem;
   width: 100%;
   border: none;
+  border-radius: 10px;
   outline: none;
+  font-size: 1.1rem;
+}
+
+button[type="submit"] {
+  padding: 1rem;
+  background-color: var(--Pink);
+  color: var(--Very-Pale-Blue);
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+section.Get-in-touch {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+section.Get-in-touch > div {
+  display: flex;
+  gap: 1rem;
+}
+svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--Very-Pale-Blue);
+}
+footer  div.logo {
+  display: grid;
+  /* gap: 1rem; */
+}
+footer > main > section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 767px) {
+  body {
+    /* background-color: red; */
+  }
 }
