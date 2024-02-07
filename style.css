@@ -347,9 +347,6 @@ div.social > i {
 }
 
 @media (min-width: 767px) {
-  body {
-    /* background-color: red; */
-  }
   header > h1 {
     width: 100%;
     font-size: xx-large;
@@ -375,7 +372,7 @@ div.social > i {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    justify-items: start;
+    justify-items: end;
     justify-content: space-between;
     align-items: center;
   }
