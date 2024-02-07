@@ -24,7 +24,7 @@ body {
 
 body nav,
 body header,
-main>section>* {
+main > section > * {
   padding-right: 2rem;
   padding-left: 2rem;
 }
@@ -45,7 +45,7 @@ p {
   text-wrap: balance;
 }
 
-header>p {
+header > p {
   width: calc(265px * 1.2);
 }
 
@@ -65,14 +65,18 @@ nav {
 
 nav img,
 figure img,
-section.statistics>div div.logo>img {
+section.statistics > div div.logo > img {
   width: 100%;
 }
 
-nav>div.log {
+nav > div.log {
   width: calc(100vw / 3.5);
 }
 
+button.btn-secondary:hover {
+  border-color: var(--Light-Pink);
+  color: var(--Light-Pink);
+}
 button.btn-secondary {
   border: 1px solid var(--Pink);
   background-color: transparent;
@@ -80,27 +84,33 @@ button.btn-secondary {
   padding: 0.5rem 1rem;
   border-radius: 50px;
 }
+button {
+  cursor: pointer;
+}
 
 header {
   text-align: center;
   margin: 4.5rem 0;
 }
 
-header>p {
+header > p {
   margin: 1.5rem auto;
 }
 
+button.btn-primary:hover {
+  background-color: var(--Light-Pink);
+}
 button.btn-primary {
   background-color: var(--Pink);
   color: var(--Very-Pale-Blue);
-  padding: 0.9rem 2.5rem;
+  padding: 1.2rem 3.5rem;
   border: none;
   border-radius: 50px;
   margin: 2rem 0;
   box-shadow: 1px 2px 3px var(--Very-Dark-Cyan);
 }
 
-header>figure {
+header > figure {
   margin: 2.5rem 0;
 }
 
@@ -112,22 +122,23 @@ section.statistics {
   align-items: center;
 }
 
-section.statistics>div {
+section.statistics > div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-section.statistics>div p.data {
+section.statistics > div p.data {
   font-weight: 700;
   font-size: 3.5rem;
+  width: 100% !important;
 }
 
-section.statistics>div p.label:last-child {
+section.statistics > div:last-child p.label:last-child {
   width: 100px;
 }
 
-section.statistics>div div.logo {
+section.statistics > div div.logo {
   width: 47px;
   align-self: flex-start;
 }
@@ -135,10 +146,10 @@ section.statistics>div div.logo {
 main {
   display: flex;
   flex-direction: column;
-  gap: 7.5rem;
+  gap: 8.5rem;
 }
 
-main>section article {
+main > section article {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -147,8 +158,8 @@ main>section article {
   gap: 1.2rem;
 }
 
-section.grow-together>section.container,
-section.Your-Users>section.container {
+section.grow-together > section.container,
+section.Your-Users > section.container {
   background-color: var(--Very-Pale-Blue);
   /* min-height: 100vh; */
   display: flex;
@@ -157,11 +168,18 @@ section.Your-Users>section.container {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
   gap: 4rem;
-  /* text-align: center; */
-  /* margin: 2rem 0; */
+  flex-wrap: wrap;
+  /* align-content: center; */
+  align-items: center;
+}
+section.container > figure {
+  flex-basis: 100px;
+}
+figure > img {
+  width: 100%;
 }
 
-main>section div.curve {
+main > section div.curve {
   width: 100%;
   height: 102px;
   /* padding: 2rem; */
@@ -173,7 +191,7 @@ main>section div.curve {
   border-bottom: 2px solid var(--Very-Pale-Blue);
 }
 
-main>section div.curve:last-child {
+main > section div.curve:last-child {
   /* width: 100%; */
   /* height: 59px; */
   /* padding: 2rem; */
@@ -186,7 +204,7 @@ main>section div.curve:last-child {
   /* background-color: orange; */
 }
 
-main>section div.curve2 {
+main > section div.curve2 {
   width: 100%;
   height: 102px;
   /* padding: 2rem; */
@@ -198,7 +216,7 @@ main>section div.curve2 {
   border-bottom: 2px solid var(--Very-Pale-Blue);
 }
 
-main>section div.curve2:last-child {
+main > section div.curve2:last-child {
   /* width: 100%; */
   /* height: 59px; */
   /* padding: 2rem; */
@@ -217,7 +235,7 @@ section.Flowing-Conversations {
   gap: 5rem;
 }
 
-body>main>section:last-child {
+body > main > section:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,7 +248,7 @@ footer {
   margin-top: 4rem;
 }
 
-footer>div.curve {
+footer > div.curve {
   width: 100%;
   height: 102px;
   background-image: url("./images/bg-footer-top-mobile.svg");
@@ -244,7 +262,7 @@ footer>div.curve {
   bottom: -5px;
 }
 
-footer>main {
+footer > main {
   background-color: var(--Very-Dark-Cyan);
   color: var(--Very-Pale-Blue);
   padding-top: 3rem;
@@ -258,14 +276,14 @@ section.newsletter {
   padding: 2rem 0;
 }
 
-section.newsletter>p {
-  min-width: calc(200px * 2);
+section.newsletter > p {
+  min-width: calc(200px * 1);
   max-width: calc(200px * 2);
   text-wrap: pretty;
   line-height: 1.2rem;
 }
 
-section.newsletter>h2 {
+section.newsletter > h2 {
   font-size: x-large;
   text-align: start;
 }
@@ -277,7 +295,7 @@ form.newsletter {
   gap: 1rem;
 }
 
-form.newsletter>input[type="email"] {
+form.newsletter > input[type="email"] {
   padding: 0.8rem;
   width: 100%;
   border: none;
@@ -311,7 +329,7 @@ svg {
   height: 100%;
   fill: var(--Very-Pale-Blue);
 }
-footer  div.logo {
+footer div.logo {
   display: grid;
   /* gap: 1rem; */
 }
@@ -320,9 +338,75 @@ footer > main > section:nth-child(2) {
   flex-direction: column;
   gap: 1.5rem;
 }
+div.social {
+  display: flex;
+  gap: 1rem;
+}
+div.social > i {
+  font-size: 1.4rem;
+}
 
 @media (min-width: 767px) {
   body {
     /* background-color: red; */
+  }
+  header > h1 {
+    width: 100%;
+    font-size: xx-large;
+  }
+  header > p {
+    width: calc(230px * 2.1);
+    text-wrap: pretty;
+  }
+  header > figure {
+    margin: 2.5rem auto;
+    width: 80vw;
+  }
+  section.statistics {
+    display: flex;
+    flex-direction: row;
+    gap: 11.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > main,
+  main > section.Flowing-Conversations,
+  main > section > section.container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    justify-items: start;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer > main > section:nth-child(2),
+  main > section > section.container > article {
+    grid-row: 1;
+  }
+  footer > main section.newsletter,
+  main > section > section.container > figure {
+    grid-column: 2;
+  }
+  main > section > section.container > article {
+    width: 46vw;
+  }
+  p {
+    text-wrap: pretty !important;
+  }
+  main > section.Flowing-Conversations > article h2,
+  main > section.Flowing-Conversations > article,
+  main > section > section.container > article,
+  main > section > section.container > article h2 {
+    text-align: start;
+  }
+  .attribution {
+    display: none;
+  }
+  form.newsletter {
+    flex-direction: row;
+    align-items: center;
+  }
+  footer > main {
+    padding-bottom: 3rem;
   }
 }
